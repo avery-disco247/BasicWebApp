@@ -73,17 +73,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Exponent function was run.");
 	}
 	
-	var smileyVariable1 = 0;
-	var smileyVariable2 = 0;
-	var smileyVariable3 = 0;
+
+	function imageinserter()
+	{
+	var smileyVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+	var smileyVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+	
+		for(var index = 0; index < smileyvariable1; index++)
+		{
+		var smileyImage = document.createElement(“img”);
+		smileyImage.src = “https://i.imgur.com/jctdkSS.png”;
+		document.getElementById(“smileyfaceheader”).appendChild(smileyImage);
+		}
+
+		for(var index = 0; index < smileyvariable2; index++)
+		{
+		
+		}
+	}
+	
+	
 	
 	function smileyFunction1()
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
     		smileyVariable1 = parseFloat(document.getElementById("firstInputBox").value);
     		smileyVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		smileyVariable3 = smileyVariable1 + smileyVariable2;
 		
 		alert("Look at your smiley faces");
 		console.log("Smiley faces showed up.");
@@ -176,7 +191,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-  <a href="#smileyface" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
+  <a href="#smileyface" onclick="imageinserter();" class="w3-btn w3-grey">Button 3</a>
     
   </center>
 </div>  
