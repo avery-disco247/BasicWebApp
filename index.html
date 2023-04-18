@@ -115,15 +115,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		}
 	}
 	
-	var YesCounter = 0
-	var NoCounter = 0
+	var YesCounter = 0;
+	var NoCounter = 0;
 	function IncrementYes()
 	{
-		YesCounter++
+		YesCounter++;
 	}
 	function IncrementNo()
 	{
-		NoCounter++
+		NoCounter++;
+	}
+	
+	function YesCounterResults()
+	{
+		document.getElementById("endResults").innerHTML = "You said Yes this many times: " + YesCounter;
+		resetVariables();
 	}
 	
 	
