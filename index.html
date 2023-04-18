@@ -102,16 +102,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 		for(var index3 = 0; index < starsVariable; index++)
 		{
-		var starsImage = document.createElement("img");
-		smileyImage.src = "https://i.imgur.com/jctdkSS.png";
-		document.getElementById("smileyfaceheader").appendChild(starsImage);
+		var starsImage = document.createElement("p");
+		starsImage.innerHTML = "*";
+		document.getElementById("starsanddots").appendChild(starsImage);
 		}
 
 		for(var index4 = 0; index < dotsVariable; index++)
 		{
-		var dotsImage = document.createElement("img");
-		frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
-		document.getElementById("smileyfaceheader").appendChild(dotsImage);
+		var dotsImage = document.createElement("p");
+		frownyImage.innerHTML = "~";
+		document.getElementById("starsanddots").appendChild(dotsImage);
 		}
 	}
 	
@@ -235,13 +235,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--This is the stars and dots page.-->
 <div id="starsanddots" class="page">
 	<!--Header.-->
-		<div id="smileyface" class="w3-container w3-flat-carrot">
-			<h1>Smiley Face Section</h1>
+		<div id="starsanddots" class="w3-container w3-flat-carrot">
+			<h1>Stars and Dots section</h1>
 		</div>
   <center>
     
-    	<div id="smileyfaceheader" class="w3-container">
-        	<p>Enter some numbers to create a smiley face artwork</p>    
+    	<div id="starsanddotsheader" class="w3-container">
+        	<p>Enter some numbers to create a stars and dots artwork</p>    
     	</div>
 </div>
 	  
