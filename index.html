@@ -128,7 +128,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function CounterResults()
 	{
-		document.getElementById("YNResults").innerHTML = "You said Yes this many times: " + YesCounter + "and you said No this many times" + NoCounter;
+		document.getElementById("YNResults").innerHTML = "You said Yes this many times: " + YesCounter + " and you said No this many times: " + NoCounter;
 		resetVariables();
 	}
 	
@@ -286,7 +286,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <!--yes and no-->
 <div id="YNfinalpage" class="page">
-	<div id="YNfinalheader" class="w3-container w3-flat-carrot">
+	<div id="YNfinalheader" class="w3-container w3-flat-green-sea">
 		<h1>Click these buttons as many times as you need</h1>
 	</div>
 	
@@ -296,17 +296,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  <p id="YNResults">FINAL PAGE CONTENT GOES HERE</p>
 	  </div>
   
-  <a class="w3-btn w3-black" onclick="IncrementYes();">Yes!
+  <a class="w3-btn w3-flat-emerald" onclick="IncrementYes();">Yes!
     <br>
     <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" width="30" alt="spongebob">
   </a>
-  <a onclick="CounterResults();" class="w3-btn w3-black">See how many times you said Yes and No</a>
+  <a onclick="CounterResults();" class="w3-btn w3-flat-green-sea">See how many times you said Yes and No</a>
     
-  <a class="w3-btn w3-black" onclick="IncrementNo();">No!
+  <a class="w3-btn w3-flat-emerald" onclick="IncrementNo();">No!
     <br>
     <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" width="30" alt="spongebob">
   </a>
-  <a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
+  <a href="#content" onclick="resetVariables();" class="w3-btn w3-flat-green-sea">Return to Home Page</a>
   </center>
 </div>
   
