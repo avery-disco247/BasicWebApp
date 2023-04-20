@@ -39,30 +39,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var exampleVariable2 = 0;
 	var exampleVariable3 = 0;
 	
-	function exampleFunction1()
-	{
-		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
-		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
-	}
-	
-	
-	function exampleFunction3()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
-	}
-	
 
 	function imageinserter()
 	{
@@ -76,7 +52,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		document.getElementById("smileyfaceheader").appendChild(smileyImage);
 		}
 
-		for(var index2 = 0; index < smileyVariable2; index++)
+		for(var index2 = 0; index2 < smileyVariable2; index2++)
 		{
 		var frownyImage = document.createElement("img");
 		frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
@@ -205,9 +181,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</form>
       
   <a href="#starsanddots" onclick="StarsAndDots();" class="w3-btn w3-flat-peter-river">stars and squiggles</a>
-  <a href="#YNfinalpage" onclick="exampleFunction2();" class="w3-btn w3-flat-green-sea">Yes/No</a>
-  <a href="#emotions" class="w3-btn w3-flat-pinky">Emotions!</a>
   <a href="#smileyface" onclick="imageinserter();" class="w3-btn w3-flat-carrot">faces!!</a>
+<br>
+<br>
+    	<div id="content3" class="w3-container">
+        	<p>Click these other buttons to do different things</p>    
+    	</div>
+  <a href="#emotions" class="w3-btn w3-flat-pinky">Emotions!</a>
+  <a href="#YNfinalpage" onclick="exampleFunction2();" class="w3-btn w3-flat-green-sea">Yes/No</a>
+
     
   </center>
 </div>  
@@ -324,9 +306,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
   <center>
     
-	  <div id="finalcontent" class="w3-container w3-flat-pinky1">
-		  <p id="endResults">I'm happy you're happy. Watch this video:		  
-</div>
+	<div id="HappyHeader" class="w3-container w3-flat-pinky1">
+		<p id="HappyHeader">I'm happy you're happy. Watch this video:	
+		<br>
+		<img width="420" height="315" src="https://thumbs.gfycat.com/KeyAllIbizanhound-mobile.jpg" alt="HappyOphrah">
+	</div>
+
 </div>
 
 
